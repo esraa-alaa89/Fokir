@@ -1,0 +1,375 @@
+body{
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    font-family: 'Source Sans 3', sans-serif;
+}
+:root{
+    --main-color: #ff305b;
+}
+a{
+    text-decoration: none;
+    color: #fff !important;
+}
+ul{
+    list-style-type: none;
+}
+i{
+    color: var(--main-color);
+}
+/* *********************NAVIGATION-BAR SECTION******************** */
+nav{
+    z-index: 99999999999999;
+}
+nav > .container{
+    padding: 0px 60px !important;
+}
+.logo{
+    color: var(--main-color) !important;
+    font-weight: 800;
+}
+nav ul li a.active
+{
+    color: var(--main-color) !important;
+}
+
+/* *********************HEADER SECTION******************** */
+header{
+    background-image: url(../images/pic3.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+header .layout{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+header h1{
+    color: var(--main-color);
+    font-size: 70px;
+}
+header h4{
+    font-size: 26px;
+}
+header h4 span::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 100%;
+    width: 2px;
+    height: 100%;
+    background-color: #fff;
+}
+header h4 span::before{
+    content: '';
+    animation: header-animation 8s ease-in 1s infinite alternate ;
+    font-size: 26px;
+}
+@keyframes header-animation{
+    0%{content: 'D';}
+    3%{content: 'De';}
+    5%{content: 'Des';}
+    7%{content: 'Desi';}
+    9%{content: 'Desig';}
+    11%{content: 'Design';}
+    13%{content: 'Designe';}
+    15%{content: 'Designer';}
+    17%{content: 'Designe';}
+    17%{content: 'Design';}
+    17%{content: 'Desig';}
+    17%{content: 'Des';}
+    17%{content: 'De';}
+    17%{content: 'D';}
+    17%{content: ' ';}
+    19%{content: 'De';}
+    21%{content: 'Dev';}
+    23%{content: 'Deve';}
+    25%{content: 'eDevel';}
+    27%{content: 'Develo';}
+    29%{content: 'Develop';}
+    31%{content: 'Develope';}
+    33%{content: 'Developer';}
+    35%{content: 'Developer';}
+    37%{content: 'Developer';}
+}
+
+/* *********************ABOUT SECTION******************** */
+/* *********************PART 1******************** */
+#about .brdr{
+    /* background-color: #ff305b; */
+    border-radius: 5px;
+    box-shadow: 0 0 0 8px #555555 inset;
+    /* position: relative; */
+}
+#about .brdr .about-img{
+    position: relative;
+    transform: translateY(36px) translateX(52px);
+}
+.about-img img{
+    border-radius: 5px;
+}
+.about-img .porfile-overly {
+    background: rgba(0, 0, 0, 0.57) none repeat scroll 0 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    /* bottom: 0; */
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease 0s;
+}
+.about-img:hover .porfile-overly{
+    opacity: 1;
+    visibility: visible;
+}
+.about-icon {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+/* *********************PART 2******************** */
+.profile-desc h2{
+    font-weight: 600;
+    line-height: 22px;
+}
+.profile-desc h2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background-color: var(--main-color);
+}
+.profile-desc p{
+    border-bottom: 1px dashed #999999;
+}
+.profile-desc span{
+    color: #333333 !important;
+    font-weight: 500;
+}
+.profile-desc ul li{
+    width: 50%;
+    font-weight: 400px;
+    padding-bottom: 25px;
+}
+.about-contact button a{
+    background-color: var(--main-color);
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 8px;
+    transition: all .5s;
+}
+.about-contact button a:hover{
+    background-color: #dd2c50;
+}
+#services{
+    background-color: #f3f3f3;
+}
+#services .services-title h2, #portofolio .portofolio-title h2, 
+#testmonial .testmonial-title h2, #blog .blog-title h2, #contact .contact-title h2 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 30px;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    position: relative;
+    text-transform: capitalize;
+}
+#services .services-title h2::after, #services .services-title h2::before, 
+#portofolio .portofolio-title h2::after, #portofolio .portofolio-title h2::before,
+#testmonial .testmonial-title h2::after, #testmonial .testmonial-title h2::before,
+#blog .blog-title h2::after, #blog .blog-title h2::before, 
+#contact .contact-title h2::after, #contact .contact-title h2::before
+ {
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+}
+#services .services-title h2::before, #portofolio .portofolio-title h2::before, 
+#testmonial .testmonial-title h2::before, #blog .blog-title h2::before, #contact .contact-title h2::before{
+    border-color: #ff305b;
+    border-style: solid;
+    border-width: 1px 0px;
+    bottom: 0;
+    padding: 4px 0 5px;
+    width: 70px;
+}
+#services .services-title h2::after, #portofolio .portofolio-title h2::after, 
+#testmonial .testmonial-title h2::after, #blog .blog-title h2::after, #contact .contact-title h2::after{
+    background-color: #ff305b;
+    bottom: 5px;
+    height: 1px;
+    width: 160px;
+}
+.service-item{
+    background-color: transparent;
+    transition: all .5s;
+    border: 0px !important;
+    padding-bottom: 18px;
+}
+.service-item i{
+    color: var(--main-color);
+    padding-top: 18px;
+    overflow: hidden;
+    transition: all .5s;
+}
+.service-item:hover{
+    background-color: #fff !important;
+}
+.service-item:hover i{
+    transform: scale(1.2, 1.2);
+}
+
+/* **********PORTOFOLIO SECTION********** */
+.portofolio-item{
+    position: relative;
+    transition: all 1s;
+}
+.portofolio-layout{
+    width: 100%;
+    height: 100%;
+    color: var(--main-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    opacity: 0;
+    transition: all 1s;
+}
+.portofolio-layout i{
+    position: absolute;
+    bottom: 18px;
+    right:18px;
+    color: var(--main-color);
+    font-size: 26px;
+}
+.portofolio-item:hover .portofolio-layout{
+    opacity: 1;
+}
+.portofolio-part2{
+    background-color: #f1f1f1;
+}
+.portofolio-part2 i{
+    font-size: 26px;
+}
+.portofolio-part2 h3{
+    font-size: 26px;
+    font-weight: 800;
+}
+.portofolio-part2 h5{
+    color: #555555;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* **********TESTMONIAL SECTION********** */
+.testmonial-item{    
+    background: #f1f1f1 none repeat scroll 0 0;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 30px 10px;
+    position: relative;
+}
+.slider-pic{
+    margin: 12px auto;
+    overflow: hidden;
+    position: relative;
+    width: 110px;
+    z-index: 999;
+}
+
+.testmonial-item::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -199px;
+    /* left: -100px; */
+    border-color: var(--main-color) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    border-width: 191px;
+    border-image: none;
+    border-style: solid;
+    width: 77px;
+    height: 72px;
+    transform: translateX(0%);
+    z-index: 1;
+    /* overflow: hidden; */
+}
+.right-testmonial .rate i{
+    color: #f1c30d !important;
+}
+
+/* **********BLOG SECTION********** */
+.blog-text{
+    background-color: #fff;
+    padding: 20px;
+}
+.blog-text h3{
+    margin-bottom: 15px;
+}
+.blog-text p{
+    margin-bottom: 15px;
+}
+.blog-text h3 a, .blog-more-details > a {
+    color: #333333;
+    text-transform: capitalize;
+    transition: all 0.3s ease-in-out;
+}
+.blog-text h3 a:hover, .blog-more-details > a:hover{
+    color: var(--main-color) !important;
+}
+
+/* **********CONTACT SECTION********** */
+#contact form .contact-btn .btn{
+    background-color: var(--main-color);
+    color: #fff !important;
+    border-color: var(--main-color);
+    padding: 0 20px;
+    height: 40px;
+    line-height: 38px;
+    margin-top: 20px;
+    text-align: center;
+    transition: all 0.5s;
+}
+#contact form .contact-btn .btn:hover{
+    background-color: #EC2403;
+    border-color: #ff305b;
+    color: #ffffff;
+}
+
+/* **********FOOTER SECTION********** */
+footer{
+    background-color: #333333;
+}
+footer ul li i{
+    color: #fff;
+    background-color: transparent;
+    font-size: 25px;
+}
+footer p{
+    color: #fff;
+    letter-spacing: 0.5;
+}
+footer p span{
+    color: var(--main-color);
+}
+
+@media screen and (max-width:990px){
+    #about .brdr{
+        border-radius: none;
+        box-shadow: none;
+    }
+    #about .brdr .about-img{
+        transform: translate(0);
+    }
+}
+@media screen and (max-width: 767px){
+    .testimonel-item {
+        padding: 20px;
+    }
+}
